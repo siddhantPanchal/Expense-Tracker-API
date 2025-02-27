@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:alpine'
+    environment:
+      - 'POSTGRES_DB=expense_tracker'
+      - 'POSTGRES_PASSWORD=root'
+      - 'POSTGRES_USER=root'
+    ports:
+      - '5432:5432'
